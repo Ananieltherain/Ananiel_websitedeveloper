@@ -13,16 +13,4 @@ Di dalam repo ini akan berisi mediaquery,responsive,root,syntax, dan lain-lain y
 <p>stay tune for more template update by me!</p>
 
 
-<p href="https://github.com/ananieltherain" class="footer">@Kris Muliawan - 2025</p>
-
-<style>
-.footer {
-    color: #f0f0f0;
-    text-align: center;
-    justify-content: center;
-}
-.footer:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-</style>
+<p href="https://github.com/ananieltherain" style{justify-content:center; text-align:center; color: #f0f0f0;}>@Kris Muliawan - 2025</p>
