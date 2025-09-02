@@ -1,0 +1,6 @@
+:root {
+    --bg-color: #010a0d;
+    --font-color: #f0f0f0;
+    --animasi: scale(1.2);
+    --animasi-transisi: 0.5 ease-in-out;
+}

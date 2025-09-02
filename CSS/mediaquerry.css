@@ -1,0 +1,36 @@
+/* LAPTOP SIZE = 1366 PX */
+@media (max-width: 1366px) {
+    html {
+        font-size: 100% /* 75 persen atau 100 persen */
+    }
+}
+
+/* TABLET SIZE = 758 PX */
+@media (max-width: 758px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+/* SMARTPHONE SIZE = 450 PX */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+
+/* ================================================================================= */
+
+
+/* informasi untuk cara mengotak ngatik bagian responsive pada media querry pada device */
+
+@media (max-width: 750px) {
+    html{
+        font-size: 65%;
+    }
+
+    .navbar {               /*here for u edit class in html */
+
+    }
+}
