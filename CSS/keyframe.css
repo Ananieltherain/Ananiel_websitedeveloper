@@ -1,1 +1,69 @@
 /* Animation css with keyframe!  */
+/* Buat aja div sama class nya loading, udah gitu aja gausah di apa apain abis itu panggil deh di css ini */
+.loading {
+  height: 50px;  /* Ini buat ngatur tinggi border loading nya nanti */
+  width: 50px;  /* Ini buat ngatur lebar border loading nya nanti */
+  border: 6px solid aqua; /* Nah ini border nya bre, buat warna nya opsional oke */
+  border-radius:  4px; /* Kasih radius ya bre biar keliatan smooth dan gak kotak banget tuh si border */
+  box-shadow: 0 0 8px aqua, 0 0 8px aqua inset; /* Ini apa bang? nah ini buat nambahin efek glow di border nya ya */
+  position: absolute; /* ya ini posisi loading nya jadi absolute dan gak kemana mana */
+  top: 50%; /* loading top nya di kasih 50% hmzzz */
+  left: 50%; /* loading left nya di kasih 50% juga hmzz */
+  translate: -50% -50%; /* Anjay ini apa bang? gua gak tau awokakwok*/
+  Z-index: 10; /* Nah ini tuh biar si loading nya berada di layer depan ye, kalo masih kurang naikin aja value Z-index nya */
+  animation: 3s loading ease-in-out infinite; /* Nah ini dia MC dari file ini, nanti gua bakal jelasin di paling bawah oke biar lengkap */
+}
+
+@keyframe loading { /* semisalnya loading gak keluar coba kali otak atik bagian name_animation nya (in this case name nya sih loading) */
+0% {
+  transform: rotateX(0) rotateY(0) rotateZ(0)
+}
+33% {
+  transform: rotateX(180deg) rotateY(0) rotateZ(0)
+}
+67% {
+  transform: rotateX(180deg) rotateY(180deg) rotateZ(0);
+}
+100% {
+  transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+}
+/* u know lah mksd gwejh, jadi transform nya ketika 0 persen gitu dan gitu oke ehehhee, pokoknya gua males jelasin */
+
+###########################################################################################################################################
+/* jirlah pager apa itu bang? buat bates aja sih jan komen */
+
+disini gua gak akan pake comment css karena file ini bisa kalian copy aja kalo butuh itu juga, nah di sini gua bakal jelasin tiap value
+dari animation CSS, ok let's get started!
+
+animation-duration : ; berapa lama animation nya berjalan
+animation-name: name_animation; nama animation dari keyframe
+animation-timing-function: ; termasuk easeinout, linear dll
+animation--delay: ; dimulai ketika detik berapa
+animation-iteration-count: ; berapa kali pengulangan dari si animasi, value bisa infinite
+animation-dirrection: ; bisa di ubah reverese jika ingin melakukan animasi yang sebaliknya, alternate akan melakukan hal yang seharusnya dan kemudian berlawanan arah
+animation-fill-mode: forwards; akan stop ketika sudah di akhir
+animation-play-state: ; bisa di gunakan di hover ketika mouse menyentuh element maka value pause
+
+
+######
+LEBIH BAIK GUNAKAN SEMUA VALUE DALAM 1 LINE KE DALAM SYNTAX animation!!!
+#####
+example : 
+animation: 3s name_animation ease-in-out 3s(animation delay but dont put this text on your code!) infinite;
+
+
+jeng jengg!!! ez pz kan
+
+
+
+Structure basic @keyframe :
+
+@keyframe name_animation {
+  0% {
+  value beginning
+  }
+  100% {
+  value ending
+  }
+}
