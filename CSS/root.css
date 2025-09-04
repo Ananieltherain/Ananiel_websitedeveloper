@@ -3,4 +3,10 @@
     --bg-smooth: #44444E;
     --font-color: #D3DAD9;
     --event-color: #715A5A;
+    --debugging : 1px solid red;
+    --debugging-2: 1px solid blue;
+    --debugging-3: 1px solid yelow;
+    --scale : scale(1.2);
+    --transition : 0.3s ease-in-out;
 }
+
